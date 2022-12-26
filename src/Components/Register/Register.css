@@ -1,0 +1,52 @@
+.register {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 17px;
+}
+
+.Register-Form {
+
+    border-color: aqua;
+    text-align: left;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Register-Form button {
+    width: fit-content;
+    font-size: large;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.Register-Form label {
+    padding: 5px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 12sp;
+}
+
+.Register-Form input {
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+.register-changer {
+    background-color: rgb(110, 228, 244);
+    border: none;
+    font-weight: 400;
+    border-radius: 5px;
+    height: 30px;
+    cursor:pointer;
+    margin: 10px;
+
+}

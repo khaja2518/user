@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react'
+import LoginComponent from './Components/Login/Login';
+import RegisterComponent from './Components/Register/Register';
 
 function App() {
+
+  let [account, setAccount] = useState('login')
+
+  let changeAccountType = (props) => {
+    setAccount(account = props)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {account === "register" ? <LoginComponent name={changeAccountType} /> : <RegisterComponent name={changeAccountType} />}
     </div>
   );
 }
